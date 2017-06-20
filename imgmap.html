@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <style>
+     .ar{
+         display:table
+        }
+     .ar:hover{
+         border:10px solid green;
+         background-color:blue;
+        }
+    </style>
+    </head>
+    <body>
+
+        <p>Click on the sun or on one of the planets to watch it closer:</p>
+
+        <img src="planets.gif" width="145" height="126" alt="Planets" usemap="#planetmap">
+
+        <map name="planetmap" >
+            <div class="ar">
+                <area shape="rect" coords="10,10,82,126" alt="Sun" href="#" onclick="alert('sun')">
+            </div>
+            <area shape="circle" coords="90,58,3" alt="Mercury" href="#">
+            <area shape="circle" coords="124,58,8" alt="Venus" href="#">
+        </map>
+
+    </body>
+</html>
+

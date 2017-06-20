@@ -1,0 +1,213 @@
+.fimg {
+    display: inline-flex;
+    position:relative;
+    max-height: 100%;
+    max-width:100%;
+    overflow: hidden;
+    top:2%;
+    z-index:2;
+}
+body {
+    overflow: hidden;
+    padding:0;
+    margin:0;
+    background-color: snow;
+    background-color: snow;
+    background:linear-gradient(135deg, #ECEDDC 25%, transparent 25%) -50px 0, linear-gradient(225deg, #ECEDDC 25%, transparent 25%) -50px 0,linear-gradient(315deg, #ECEDDC 25%, transparent 25%),linear-gradient(45deg, #ECEDDC 25%, transparent 25%);	
+    background-size: 10px 10px;
+    background-color: #EC173A;
+}
+
+.next {
+    position:absolute;
+    width:100px;
+    height:100px;
+    border: 1px solid grey;
+    border-radius:100%;
+    float: left;
+    z-index:10;
+    bottom:4%;
+    left: 82%;
+    text-align: center;
+    font-size:0;
+    -webkit-transition: width 2s, height 2s,transform 2s;
+    transition: width 2s, height 2s,transform 2s;
+    -moz-transition: width 2s, height 2s,transform 2s;
+}
+.next img{
+    max-height: 100%;
+    max-width: 100%;
+}
+.next:hover{
+    width:120px;
+    height:120px;
+    transform: translateX(-10px)
+}
+
+
+.star {
+    visibility: hidden;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:-80%;
+    padding-left: 1%;
+    height: 17%;
+    -moz-transition:3s;
+    -webkit-transition:3s;
+    transition:3s;
+}
+.treetop{
+    visibility: hidden;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:-50%;
+    height:66.66%;
+    -moz-transition:3s;
+    -webkit-transition:3s;
+    transition:3s;
+    z-index: 3;
+}
+
+.trunk {
+    visibility: hidden;
+    display: block;
+    background-color:#997733;
+    margin-left: auto;
+    margin-right: auto;
+    width:7%;
+    margin-top: 8%;
+    height:8%;
+    padding-left:1%;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    -moz-transition:3s;
+    -webkit-transition:3s;
+    transition:3s;
+}
+
+.dot-small-yellow,.dot-big-yellow,.dot-small-red,.dot-big-red {
+    left:100%;
+    top:100%;
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius:100%;
+    background-color: #FFEC12;
+    position:absolute;
+    z-index: 10;
+    box-shadow: 2px 4px 4px 0.1px grey;
+    -moz-transition:4s;
+    -webkit-transition:4s;
+    transition:4s;
+}
+.dot-big-yellow,.dot-big-red{
+    width:30px;
+    height:30px;
+}
+
+
+.dot-small-red,.dot-big-red {
+    background-color: #ff2800;
+    border:0px solid grey;
+}
+.merryxmas {
+    position: absolute;
+    display: block;
+    top:5%;
+    left:10%;
+    z-index: 1;
+    border-width:20px;
+}
+
+.person {
+    display: block;
+    width:22%;
+    height:40%;
+    background-color: snow;
+    background:linear-gradient(135deg, #ECEDDC 25%, transparent 25%) -50px 0, linear-gradient(225deg, #ECEDDC 25%, transparent 25%) -50px 0,linear-gradient(315deg, #ECEDDC 25%, transparent 25%),linear-gradient(45deg, #ECEDDC 25%, transparent 25%);	
+    background-size: 10px 10px;
+    background-color: #EC173A;
+    padding:10px;
+    margin-left: 1%;
+}
+.texture p{
+    margin: 2%;
+    color: gray;
+    font-family: goudy old style,perpetua,verdana,cursive;
+    font-size: 1.375em;
+}
+
+.texture {
+    width:60%;
+    height:50%;
+    background-image:url("texture.jpg");
+    background-size:contain;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:10%;
+    height:66.66%;
+    z-index: 12;
+    padding-top:5px;
+}
+.about {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:10%;
+    width:20%;
+    height: 49%;
+}
+@-webkit-keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+@-moz-keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
